@@ -92,3 +92,14 @@ README Update: Added a summary of Milestone 4 progress to the README file.
 
 File Upload Support: Successfully configured Multer for handling and storing user-uploaded images.
 
+#Milestone 5#
+Sign-Up Page and Form Validation
+
+Key Features:
+Sign-Up Page: Developed a user-friendly registration page.
+Form Validation: Implemented validation for user inputs.
+
+Tech stack:
+
+Frontend: React
+
