@@ -8,12 +8,18 @@ import { server } from "../../server";
 import { toast } from "react-toastify";
 
 
+
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
+
+
+
+
 
 
   const handleFileInputChange = (e) => {
@@ -31,13 +37,27 @@ const Signup = () => {
   };
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    const newForm = new FormData();
+    newForm.append("file", avatar);
+    newForm.append("name", name);
+    newForm.append("email", email);
+    newForm.append("password", password);
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        "Accept": "any",
+      },
+    };
+
+
 
 
     axios
-      .post(`${server}/user/create-user`, { name, email, password, avatar })
+      .post(server, newForm, config)
       .then((res) => {
+        console.log("res", res)
         toast.success(res.data.message);
         setName("");
         setEmail("");
@@ -45,10 +65,39 @@ const Signup = () => {
         setAvatar();
       })
       .catch((error) => {
+        console.log("rerer")
         toast.error(error.response.data.message);
       });
+    // let headers = new Headers();
+
+
+    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // headers.append('Access-Control-Allow-Credentials', 'true');
+   
+
+
+    // try {
+    //   const res = await fetch("http://localhost:8000/api/v2/user",  {
+    //     // headers : headers,
+     
+     
+    //     method : "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",  // Important for JSON payloads
+    //     },
+    //     body : JSON.stringify({name, email, password, })
+    //   });
+    //   const data = await res.json();
+    //   console.log(data)
+     
+    // } catch (error) {
+    //   console.log(error)
+    // }
   };
-   return (
+
+
+ 
+  return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -192,4 +241,5 @@ const Signup = () => {
 
 
 export default Signup
+
 
