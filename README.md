@@ -168,6 +168,17 @@ Maintain Consistency: Ensure the layout remains uniform for all products.
 
 Tech stack :
 Frontend: react
+# Milestone 9 : In this milestone, we will create a Createproduct page using react.
+Key features:
+We can add and remove images from the webpage.
+We can preview images.
+We can add our names and descriptions on it.
+We can specify content based on category.
+We can specify tags.
+We can specify prices range.
+We can include our preferred stock.
+We can add our e-mail.
+Tech Stack : React
 
 
 
