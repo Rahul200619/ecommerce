@@ -67,7 +67,7 @@ Error Handling: Added basic error handling for smoother server operation.
 #Milestone 4#
 
 Description
-In Milestone 4, I expanded the backend functionality of the e-commerce application by introducing user data management and file uploads. This involved creating a User Model and Controller, as well as configuring Multer for handling file uploads like profile pictures.
+In Milestone 4 I expanded the backend functionality of the e-commerce application by introducing user data management and file uploads. This involved creating a User Model and Controller, as well as configuring Multer for handling file uploads like profile pictures.
 
 What I Learned
 User Model Creation: Designed a blueprint for user data, specifying fields like name, email, and password using a MongoDB schema.
@@ -168,6 +168,7 @@ Maintain Consistency: Ensure the layout remains uniform for all products.
 
 Tech stack :
 Frontend: react
+
 # Milestone 9 : In this milestone, we will create a Createproduct page using react.
 Key features:
 We can add and remove images from the webpage.
