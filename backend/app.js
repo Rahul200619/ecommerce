@@ -17,6 +17,7 @@ app.use(cors({
   credentials: true, // Enable if you need to send cookies or authentication headers
 }));
 
+
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
 // Serve static files for uploads and products

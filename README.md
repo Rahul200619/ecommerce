@@ -181,5 +181,34 @@ We can include our preferred stock.
 We can add our e-mail.
 Tech Stack : React
 
+## Milestone 10: Updated models/product.js controller/product.js Createproductjs
+
+# Controller/Product.js:
+
+This Express.js route handles the creation of a new product. It validates the product data, checks if the user exists in the database, and ensures that at least one image is uploaded. If validation passes, the product is saved to the database and a success message is returned.
+
+# model/Product.js
+
+This code defines a Mongoose schema for a "Product" model in MongoDB. It specifies fields such as name, description, category, tags, price, stock, email, and images, with validation rules to ensure that required data is provided. Additionally, it includes automatic timestamping for creation and modification times. The schema is then used to create and export the Product model.
+
+# src/Creatproduct.js
+
+The CreateProduct component is a form for creating a new product. Here's a quick breakdown of its key features:
+
+State Management: Uses useState to manage the form data for name, description, category, tags, price, stock, and email, along with image handling (images and previewImages).
+File Handling: Allows users to upload multiple images, which are previewed before submission. The images are added to the form data using FormData.
+Form Submission: When the form is submitted, the data is sent to the backend using axios. If the request is successful, a success message is displayed, and the form is reset. If there's an error, an alert is shown.
+Category Options: Provides a set of predefined categories for the product (Electronics, Fashion, Books, and Home Appliances).
+
+
+
+**Milestone 11 - Dynamic Home Page with MongoDB Integration**
+
+In this milestone, we focused on making the home page dynamic by fetching and displaying product data stored in MongoDB. The objective was to write a backend endpoint that retrieves all saved product data and sends it to the frontend. On the frontend, we implemented a function to request this data and dynamically render it using the previously created product card component. This milestone helped in understanding how to extract data from MongoDB, send it through an API endpoint, receive it in the frontend, and display it efficiently using components. By completing this, we have successfully built a dynamic product listing system that enhances user interaction and improves the functionality of our application.
+
+**Milestone 12 - My Products Page with User-Based Filtering**
+
+In this milestone, we developed the My Products page, which displays only the products added by the logged-in user based on their email. We achieved this by writing a backend endpoint that filters product data in MongoDB using the user's email and sends only the relevant products to the frontend. On the frontend, we implemented a function to fetch this filtered data and dynamically render it using the existing product card component. This milestone provided valuable experience in filtering data based on specific constraints, handling API requests efficiently, and dynamically displaying user-specific content. Successfully completing this step enhances the personalization of the application, allowing users to manage their own products seamlessly. 
+
 
 

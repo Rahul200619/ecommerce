@@ -16,7 +16,7 @@ export default function Product({ name, images, description, price }) {
    <div className="bg-neutral-200 p-4 rounded-lg shadow-md flex flex-col justify-between">
      <div className="w-full ">
        <img
-         src={`http://localhost:8000${currentImage}`} // Ensure the URL is correct\
+         src={`http://localhost:5000${currentImage}`} // Ensure the URL is correct\
          alt={name}
          className="w-full h-56 object-cover rounded-lg mb-2"
        />
