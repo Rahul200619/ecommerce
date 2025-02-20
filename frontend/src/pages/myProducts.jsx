@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MyProduct from "../components/myproducts.jsx";
 import axios from "axios";
+import Nav from "../components/nav.jsx";
 
 
 

@@ -1,4 +1,5 @@
 import Product from "../components/product";
+import Nav from "../components/nav";
 
 
 const productDetails = [
