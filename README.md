@@ -246,3 +246,12 @@ of the application, allowing users to manage their own products seamlessly.
  Create an new Nav component with links to all pages: Home, My-products, Add product, Cart. Made the Navbar responsive to all screen sizes. We added the nav component to all the pages and make the navigations to all this pages smooth and easy. 
  
  **Summary :** We created a NavBar component where we can access different pages directly just creating a button instead of changing the URL. And also we made the NavBar responsive according to device (..like Desktop and Mobilephone). Tech Stack : React - frontend - src - components - NavBar.jsx React - frontend - pages - Cart.jsx
+
+
+ **Milestone 16 - Product Info Page**
+In this milestone, we created a Product Info Page that displays detailed product data. Users can choose the quantity and click the Add to Cart button to add items to their cart.
+
+
+Tech Stack:
+Frontend:
+ React.js – For building the Product Info Page.

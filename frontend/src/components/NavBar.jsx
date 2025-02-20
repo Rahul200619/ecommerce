@@ -74,7 +74,7 @@ const NavBar = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/my-products"
+                                    to="/myProduct"
                                     className={({ isActive }) =>
                                         isActive
                                             ? "text-white font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-200"
@@ -86,7 +86,7 @@ const NavBar = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/create-product"
+                                    to="/createProduct"
                                     className={({ isActive }) =>
                                         isActive
                                             ? "text-white font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-200"
@@ -133,7 +133,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/myproducts"
+                                to="/myProduct"
                                 className={({ isActive }) =>
                                     isActive
                                         ? "block text-white font-semibold px-3 py-2 rounded-md text-base transition-colors duration-200"
@@ -146,7 +146,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/addproducts"
+                                to="/createProduct"
                                 className={({ isActive }) =>
                                     isActive
                                         ? "block text-white font-semibold px-3 py-2 rounded-md text-base transition-colors duration-200"
