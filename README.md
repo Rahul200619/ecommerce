@@ -255,3 +255,26 @@ In this milestone, we created a Product Info Page that displays detailed product
 Tech Stack:
 Frontend:
  React.js – For building the Product Info Page.
+
+ # Milestone 16 : In this milestone, we will create an product info page that display all the product data and choose quantity and add to card button.
+Key feautures:
+Created an new page that display all the product data.
+Add quantity and add to card button.
+Summary : We created an ProductDetails page to view the product with desired id, and added a count button with increase(+) and decrease(-) option in it.
+Tech Stack : React - frontend - src - pages - ProductDetails 
+
+# Milestone 17 : In this milestone, we will write an backend endpoint to add products to cart and store in database.
+Key feautures:
+We can edit the user schema to store cart products.
+Write an end point to receive the product details and store in database.
+Summary :  We updated the ProductDeatails page to store and recieve the Product deatails.
+Tech Stack : Backend - controller - product.js
+model - product.js & user.js
+Frontend - pages - ProductDetails
+
+# Milestone 18 : In this milestone, we will create an Backend endpoint for the cart page. We will write the backend logic to fetch all the products inside user cart to display in cart page.
+Key feautures :
+We will, create an endpoint to receive request from cart page.
+And also, we will create an backend endpoint to fetch all the products inside cart with user mail.
+Summary : We created an endpoint to get all types of products details in our page.
+Tech Stack: Backend - product.js
