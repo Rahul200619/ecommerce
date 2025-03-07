@@ -287,3 +287,20 @@ Write an endpoint to increase and decrease the quantityCreate an cart page that 
 For each product add an option to increase and decrease quantity using (+) and (-) buttons.
 Write an endpoint to increase and decrease the quantity.
 Summary : created an backend end point to increment and decrement product in cart.
+Tech Stack: Backend -controller -product.js
+Frontend: src-components-product.jsx
+pages-Cart.jsx
+
+
+# Milestone 20 : In this milestone we will profile page frontend and write an endpoint to receive user data and display.
+Key Features:
+Created an Backend endpoint that will sent user data
+created frontend profile page
+display profile photo, name and email in one section
+In another section display address and add an button called "Add address"
+If there are no address display "No address found"
+summary: Created an profile page that display profile photo, name and email in one section
+In another section it displays a address
+Tech Stack: Backend -controller - user.js
+Frontend: src-components-AddressCard.jsx,NavBar.jsx
+pages-profile.jsx
