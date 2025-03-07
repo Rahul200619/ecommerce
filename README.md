@@ -278,3 +278,12 @@ We will, create an endpoint to receive request from cart page.
 And also, we will create an backend endpoint to fetch all the products inside cart with user mail.
 Summary : We created an endpoint to get all types of products details in our page.
 Tech Stack: Backend - product.js
+
+# Milestone 19 : we will create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart.
+Key feautures :
+Create an cart page that display the products inside cart using endpoint we build in milestone 18.
+For each product add an option to increase and decrease quantity using + and - buttons.
+Write an endpoint to increase and decrease the quantityCreate an cart page that display the products inside cart using endpoint we build in milestone 18.
+For each product add an option to increase and decrease quantity using (+) and (-) buttons.
+Write an endpoint to increase and decrease the quantity.
+Summary : created an backend end point to increment and decrement product in cart.
