@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AddressCard from "../components/AddressCard";
+import {useNavigate} from "react-router-dom";
 import Nav from "../components/NavBar";
 
 
@@ -10,9 +11,8 @@ export default function Profile() {
         phoneNumber: "",
         avatarUrl: "",
     });
-
-
     const [addresses, setAddresses] = useState([]);
+    const navigate =useNavigate()
 
 
     useEffect(() => {
@@ -38,6 +38,9 @@ export default function Profile() {
                 console.log("Addresses fetched:", data.addresses);
             });
     }, []);
+    const handleAddAddress =()=>{
+        navigate("/create-address");
+    };
     return (
         <>
             <Nav />
@@ -101,7 +104,7 @@ export default function Profile() {
                             </h1>
                         </div>
                         <div className="w-full h-max p-5">
-                            <button className="w-max px-3 py-2 bg-neutral-600 text-neutral-100 rounded-md text-center hover:bg-neutral-100 hover:text-black transition-all duration-100">
+                            <button className="w-max px-3 py-2 bg-neutral-600 text-neutral-100 rounded-md text-center hover:bg-neutral-100 hover:text-black transition-all duration-100" onClick={handleAddAddress}>
                                 Add Address
                             </button>
                         </div>

@@ -304,3 +304,13 @@ In another section it displays a address
 Tech Stack: Backend -controller - user.js
 Frontend: src-components-AddressCard.jsx,NavBar.jsx
 pages-profile.jsx
+
+# Milestone 21: we will create an frontend page form for address input.
+key Features:
+created the frontend form that will will take address.
+In that add address form created the require details such as Country,city,address1, address2, zip code, address type
+
+summary:Created an frontend form that will will take address.
+Take country, city, address1, address2, zip code, address type
+
+Tech Stack:frontend-src-pages-profile.jsx,Routes-routes.jsx,App.js
