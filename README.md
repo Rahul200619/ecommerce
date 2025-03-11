@@ -314,3 +314,11 @@ summary:Created an frontend form that will will take address.
 Take country, city, address1, address2, zip code, address type
 
 Tech Stack:frontend-src-pages-profile.jsx,Routes-routes.jsx,App.js
+
+# Milestone 22: we will create an backend endpoint that will save the address inside user profile in database.
+key features: Created an backend endpoint that will store the address inside user profile in database.
+
+summary:  created an endpoint that will receive the address from address form in frontend.
+Add the address to the address array inside user collection.
+
+Tech Stack: backend-controller-user.js
