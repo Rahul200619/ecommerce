@@ -229,14 +229,22 @@ of the application, allowing users to manage their own products seamlessly.
 **Milestone 13 : In this miletone, we will add an functionality to edit the uploaded products.**
 
 **Key feautures :**
- We will add edit button and then write and backend endpoint to update the new details inside MongoDB database. How to write an endpoint that will update the existing data in MongoDB. How to auto fill the form with previous data and give option to edit. Summary : Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save. Tech Stack : React - frontend - components - MyProduct.jsx Backend - controller - product.js
+ We will add edit button and then write and backend endpoint to update the new details inside MongoDB database. How to write an endpoint that will update the existing data in MongoDB. How to auto fill the form with previous data and give option to edit. 
+ 
+ Summary : Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save. 
+ 
+ Tech Stack : React - frontend - components - MyProduct.jsx 
+ Backend - controller - product.js
 
 
 
 **Milestone 14 :In this milestone, we will add an functionality to delete button to the product data and write and backend endpoint to delete the product with the use of ID.**
 
 **Key feautures:**
- How to write an endpoint that delete the product with specific ID from MongoDB. Wrote an endpoint that will Delete the data form MongoDB using ID. In frontend we will add an delete button to the product card. When click on delete button we will send the product id to server endpoint. Summary : We created an delete option in myproducts Tech Stack : React - frontend - component - MyProduct.jsx Backend - controller - product.js
+ How to write an endpoint that delete the product with specific ID from MongoDB. Wrote an endpoint that will Delete the data form MongoDB using ID. In frontend we will add an delete button to the product card. When click on delete button we will send the product id to server endpoint. Summary : We created an delete option in myproducts
+ 
+ Tech Stack : React - frontend - component - MyProduct.jsx 
+ Backend - controller - product.js
 
 
 
@@ -245,29 +253,35 @@ of the application, allowing users to manage their own products seamlessly.
 **Key feautures:**
  Create an new Nav component with links to all pages: Home, My-products, Add product, Cart. Made the Navbar responsive to all screen sizes. We added the nav component to all the pages and make the navigations to all this pages smooth and easy. 
  
- **Summary :** We created a NavBar component where we can access different pages directly just creating a button instead of changing the URL. And also we made the NavBar responsive according to device (..like Desktop and Mobilephone). Tech Stack : React - frontend - src - components - NavBar.jsx React - frontend - pages - Cart.jsx
+ **Summary :** We created a NavBar component where we can access different pages directly just creating a button instead of changing the URL. And also we made the NavBar responsive according to device (..like Desktop and Mobilephone). 
+ 
+ Tech Stack : React - frontend - src - components - NavBar.jsx React - frontend - pages - Cart.jsx
 
 
  **Milestone 16 - Product Info Page**
 In this milestone, we created a Product Info Page that displays detailed product data. Users can choose the quantity and click the Add to Cart button to add items to their cart.
 
-
 Tech Stack:
 Frontend:
  React.js – For building the Product Info Page.
+ 
 
  # Milestone 16 : In this milestone, we will create an product info page that display all the product data and choose quantity and add to card button.
 Key feautures:
 Created an new page that display all the product data.
 Add quantity and add to card button.
+
 Summary : We created an ProductDetails page to view the product with desired id, and added a count button with increase(+) and decrease(-) option in it.
+
 Tech Stack : React - frontend - src - pages - ProductDetails 
 
 # Milestone 17 : In this milestone, we will write an backend endpoint to add products to cart and store in database.
 Key feautures:
 We can edit the user schema to store cart products.
 Write an end point to receive the product details and store in database.
+
 Summary :  We updated the ProductDeatails page to store and recieve the Product deatails.
+
 Tech Stack : Backend - controller - product.js
 model - product.js & user.js
 Frontend - pages - ProductDetails
@@ -276,7 +290,9 @@ Frontend - pages - ProductDetails
 Key feautures :
 We will, create an endpoint to receive request from cart page.
 And also, we will create an backend endpoint to fetch all the products inside cart with user mail.
+
 Summary : We created an endpoint to get all types of products details in our page.
+
 Tech Stack: Backend - product.js
 
 # Milestone 19 : we will create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart.
@@ -286,7 +302,9 @@ For each product add an option to increase and decrease quantity using + and - b
 Write an endpoint to increase and decrease the quantityCreate an cart page that display the products inside cart using endpoint we build in milestone 18.
 For each product add an option to increase and decrease quantity using (+) and (-) buttons.
 Write an endpoint to increase and decrease the quantity.
+
 Summary : created an backend end point to increment and decrement product in cart.
+
 Tech Stack: Backend -controller -product.js
 Frontend: src-components-product.jsx
 pages-Cart.jsx
@@ -299,8 +317,10 @@ created frontend profile page
 display profile photo, name and email in one section
 In another section display address and add an button called "Add address"
 If there are no address display "No address found"
+
 summary: Created an profile page that display profile photo, name and email in one section
 In another section it displays a address
+
 Tech Stack: Backend -controller - user.js
 Frontend: src-components-AddressCard.jsx,NavBar.jsx
 pages-profile.jsx
@@ -322,3 +342,50 @@ summary:  created an endpoint that will receive the address from address form in
 Add the address to the address array inside user collection.
 
 Tech Stack: backend-controller-user.js
+
+# Milestone 23 : In this milestone, we will make our create an select address page in frontend and we will write product schema for the orders in the backend.
+Key feautures :
+We will add an button inside cart called "Place order"
+We will create an select address page where we will display all the address and ask to select delivery address.
+We will write mongoose schema for storing orders details.
+
+Summary : If we click the Place order button, It will show all the available address.
+
+Tech Stack : Frontend - pages - Cart.jsx, SelectAddress.jsx.
+Backend - model - order.js,
+controller - user.js.
+
+# Milestone 24 : In this milestone, we will make our create an order conformation page in frontend where will display products ordering and address selected and total price details.
+Key feautures :
+First we will display all the products we are ordering.
+Next we will display the address user selected to deliver.
+We will display the total value of the cart.
+We will have an place order button at the bottom.
+
+Summary : We created an order conformation page.
+
+Tech Stack - Frontend - pages - OrderConfirmation.jsx
+Backend - model - product.js
+
+# Milestone 25 : In this milestone, we will create an backend endpoint for place order.
+Key feautures :
+We had created an endpoint that will receive the products, user, address details.
+We will get the mail of the user using that you need to retrive the _id of the user.
+For each product the order will be different with same address.
+Using order schema you created earlier you will store order details in mongodb order collection.
+
+Summary : Created an endpoint for orders.
+
+Tech Stack : Backend - model - order.js
+
+# Milestone 26 : In this milestone, we will create an backend endpoint for place order.
+Key feautures :
+You need to create an endpoint that will receive the user mail.
+You will get the mail of the user using that you need to retrive the _id of the user.
+Using that _id you need to get all the orders of that user.
+Send all the users orders in the response.
+
+Summary : Updated an endpoint for orders.
+
+Tech Stack : Backend - controller - order.js
+Frontend - pages - OrderConfirmation.jsx
