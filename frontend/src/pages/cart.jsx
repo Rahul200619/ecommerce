@@ -1,17 +1,19 @@
-// 
 import CartProduct from '../components/CartProduct';
-import Nav from '../components/NavBar';
+import Nav from '../components/nav';
 import { useState, useEffect } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
 
 
     const [products, setProducts] = useState([]);
-
+    const navigate = useNavigate(); 
+    const email = useSelector((state) => state.user.value);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v2/product/cartproducts?email=${'vigneshrahulr@gmail.com'}`)
+      if (!email) return;
+        fetch(`http://localhost:5000/api/v2/product/cartproducts?email=${email}`)
           .then((res) => {
             if (!res.ok) {
               throw new Error(`HTTP error! status: ${res.status}`);
@@ -25,9 +27,13 @@ const Cart = () => {
           .catch((err) => {
             console.error(" Error fetching products:", err);
           });
-      }, []);
+      }, [email]);
    
       console.log("Products:", products);
+
+      const handlePlaceOrder = () => {
+        navigate('/select-address');
+      }
 
 
     return (
@@ -45,6 +51,13 @@ const Cart = () => {
                             ))
                         }
                     </div>
+                    <div className='w-full p-4 flex justify-end'>
+                    <button
+                    onClick={handlePlaceOrder}
+                    className='bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600'>
+                   Place Order
+                  </button>
+                  </div>
                 </div>
             </div>
         </div>
